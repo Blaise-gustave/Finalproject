@@ -20,12 +20,19 @@ Rails: 5.2.0
 Function List 
 
 The system should allow a new user to sign up and login
+
 They system should allow the user to write a comment or post a message pointing on any company
+
 The system should allow the users to rank the services
+
 The system should allow the company to post or respond on the users comment
+
 The system should allow the user to edit and delete their comment
+
 The system should allow the company to edit and delete their comment
+
 The system should allow the company to view the whole chat and comment on it
+
 
 Catalog design 
 
