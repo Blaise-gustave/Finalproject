@@ -34,6 +34,11 @@ The system should allow the company to edit and delete their comment
 The system should allow the company to view the whole chat and comment on it
 
 
+Skills 
+
+
+ Grading, Devise and comment function
+
 Catalog design 
 
 https://docs.google.com/document/d/1j3SqJxtMxIorDqC19U3lNjbqWgtd6lMC9SwXkmtl8Zo/edit?usp=sharing
