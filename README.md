@@ -15,7 +15,7 @@ And it will allow the company to over check the comment as a key point to  evalu
 Version 
 
 Ruby:2.5.1
-Rails: 5.2.0
+Rails: 6.0.1
 
 Function List 
 
@@ -37,7 +37,7 @@ The system should allow the company to view the whole chat and comment on it
 Skills 
 
 
- Grading, Devise and comment function
+ Grading, Kaminari and comment function
 
 Catalog design 
 
@@ -62,8 +62,6 @@ Screen wire frame
 https://docs.google.com/document/d/1VnYmGI9p_yJllw7df44DH0CZl1s1vy9nbMD6_Y99N6I/edit?usp=sharing
 
 Used Gems
-
-Gem ‘devise’
 
 Gem ‘bootstrap’
 

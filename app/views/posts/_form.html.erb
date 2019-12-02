@@ -1,0 +1,33 @@
+<%= form_with(model: post, local: true) do |form| %>
+  <% if post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(post.errors.count, "error") %> prohibited this post from being saved:</h2>
+
+      <ul>
+        <% post.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="form-group">
+    <%= form.text_field :company_name, class:"form-control", placeholder:"Enter Company Name" %>
+  </div>
+  <div class="form-group">
+    <%= form.text_area :post, class:"form-control", placeholder:"Enter Your Post", row:"3" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :ranking %><br />
+    <%= form.radio_button :ranking, 'Fair' %> Fair<br />
+    <%= form.radio_button :ranking, 'Good' %> Good<br />
+    <%= form.radio_button :ranking, 'Very Good' %> Very Good<br />
+    <%= form.radio_button :ranking, 'Excellent' %> Excellent<br />
+  </div>
+  <div class="field">
+    <%= form.hidden_field :user_id, value: current_user.id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class:"btn btn-success" %>
+  </div>
+<% end %>

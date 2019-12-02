@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<title>Project</title>
+<%= csrf_meta_tags %>
+<%= csp_meta_tag %>
+
+<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<center>
+<div class="card" id="slideshow">
+<div class="card-body">
+<h1 class="heading">Welcome To Online Services Evaluation Platform</h1>
+
+<p class="paragraphy">If Is Not The Employers Who Pays The Wages.<br>Employers Only Handle The Money.<br>It Is The Customer Who Pays The Wages <br>
+ Help Us Evaluate The Service We Provide You By Choosing User Or Company If You Are An Admin </p>
+
+</div><br>
+</center>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="card-group">
+  <div class="card">
+    <%= image_tag('about.jpeg', class:"card-img-top", style:"height:10rem;") %>
+    <div class="card-body">
+      <h5 class="card-title">About Us</h5>
+      <p class="card-text">This is an online App help the company to evaluate their service by allowing the customes to express their feeling on the company.</p>
+    </div>
+  </div>
+  <div class="card">
+    <%= image_tag('openservice.png', class:"card-img-top", style:"height:10rem;") %>
+    <div class="card-body">
+      <h5 class="card-title">Services</h5>
+      <p class="card-text">Free post for user <br> Grading option granted to User <br>Dashbord visual on Company portal</p>
+    </div>
+  </div>
+  <div class="card">
+    <%= image_tag('bene.png', class:"card-img-top") %>
+    <div class="card-body">
+      <h5 class="card-title">Beneficials </h5>
+      <p class="card-text">This App can benefit both the Consumers, Company owner and the company itself. this App allows customers to leave a feedback . Feedback is beneficial to company for improvement of its products and services.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div><br>
+<%= yield %>
+</body>
+
+</html>

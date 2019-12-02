@@ -1,0 +1,25 @@
+<h3>User list</h3>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Names</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td>
+          <%= user.fullname %>
+        </td>
+        <td>
+          <%= user.email %>
+        </td>
+        <td>
+          <%= user.telephone %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

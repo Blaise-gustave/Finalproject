@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+.heading{
+    text-align: center;
+    margin-top: 5rem;
+    color:#000;
+    font-size: xx-large;
+    font-family: News Gothic MT;
+    font: bolder;
+}
+#slideshow{
+    background: url('here-is-the-price-for-drain-repair-services (1).jpg') repeat-x;
+    width: 80rem;
+    height: 30rem;
+}
+.card{
+    border-radius: 3rem;
+}
+.paragraphy{
+    text-align: center;
+    color:#000;
+    font-size: 1.5rem;
+    font-family: Lucida Sans;
+}
+#navbar-brand{
+    font-family: Lucia Sans Unicode;
+    color:#fff;
+    font-size: 25px;
+}
+#navitem{
+    color:#fff;
+}
+#card{
+    width: 50rem;
+}
