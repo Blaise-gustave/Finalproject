@@ -1,5 +1,12 @@
-<p id="notice"><%= notice %></p>
 
+<center>
+<div class="card w-50">
+<div class="card-header" style="background-color:#357376;">
+
+
+<h1 style="color:#fff;">Post details</h1>
+</div>
+<div class="card-body">
 <p>
   <strong>Company name:</strong>
   <%= @post.company_name %>
@@ -18,10 +25,14 @@
   <strong>User:</strong>
   <%= @post.user_id %>
 </p>
+<%= link_to 'Edit', edit_post_path(@post), class: "btn btn-info btn-sm" %>
+</div>
+
+</div>
+
+</center>
 
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
 <% if current_user.admin?%>
   <%= render 'comments/comment' %>
 <% end %>

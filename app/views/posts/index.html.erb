@@ -1,13 +1,13 @@
 <center>
-<div class="card" style="width:50rem;">
+<div class="card w-75">
 <div class="card-header" style="background-color:#357376;">
-<p id="notice"><%= notice %></p>
+
 
 <h1 style="color:#fff;">Posts</h1>
 </div>
 <div class="card-body">
 
-<table>
+<table class="table">
   <thead>
     <tr>
     <th>UserName</th>
@@ -25,7 +25,20 @@
       <td><%= post.user.fullname%></td>
         <td><%= post.company_name %></td>
         <td><%= post.post %></td>
-        <td><%= post.ranking %></td>
+        <td>
+          <% if post.ranking == "Excellent" %>
+            <p class="btn btn-success btn-sm">Excellent</p>
+          <% end %>
+          <% if post.ranking == "Very Good" %>
+            <p class="btn btn-info btn-sm">Very Good</p>
+          <% end %>
+          <% if post.ranking == "Good" %>
+            <p class="btn btn-warning btn-sm">Good</p>
+          <% end %>
+          <% if post.ranking == "Fair" %>
+            <p class="btn btn-danger btn-sm">Fail</p>
+          <% end %>
+        </td>
 
         <td><% if  post.comments.present? %><% post.comments.each do |comment| %>
           <%= comment.content %>
